@@ -22,7 +22,7 @@ class NewsViewController: UIViewController, UITableViewDataSource, UITableViewDe
         if (articleSort) {
          SourcesUrl = URL(string: "https://newsapi.org/v1/articles?source=\(sourcesID)&apiKey=[APIKEY]")
         } else {
-            SourcesUrl = URL(string: "https://newsapi.org/v1/articles?source=\(sourcesID)&sortBy=latest&apiKey=6[APIKEY]")
+            SourcesUrl = URL(string: "https://newsapi.org/v1/articles?source=\(sourcesID)&sortBy=latest&apiKey=[APIKEY]")
         }
         getArticles()
     }
