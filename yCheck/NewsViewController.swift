@@ -20,9 +20,9 @@ class NewsViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.becomeFirstResponder()
         // Do any additional setup after loading the view.
         if (articleSort) {
-         SourcesUrl = URL(string: "https://newsapi.org/v1/articles?source=\(sourcesID)&apiKey=65e40d394e094ecf95697081bb582643")
+         SourcesUrl = URL(string: "https://newsapi.org/v1/articles?source=\(sourcesID)&apiKey=[APIKEY]")
         } else {
-            SourcesUrl = URL(string: "https://newsapi.org/v1/articles?source=\(sourcesID)&sortBy=latest&apiKey=65e40d394e094ecf95697081bb582643")
+            SourcesUrl = URL(string: "https://newsapi.org/v1/articles?source=\(sourcesID)&sortBy=latest&apiKey=6[APIKEY]")
         }
         getArticles()
     }
